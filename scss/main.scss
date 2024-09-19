@@ -56,7 +56,8 @@ p{
 .image-card{
     position:relative;
     &:hover{
-        .titre-image{
+        .titre-image,
+        .action-image-buttons{
             opacity: 1;
         }
         img{
@@ -76,8 +77,28 @@ p{
         opacity: 0;
         transition: all 0.3s;
     }
+
+    .action-image-buttons{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        opacity: 0;
+        transition: all 0.3s;
+    }
 }
 
 .form-label{
     color: $primary;
+}
+
+.allreservations{
+    a{
+        display: block;
+        color: $black;
+        padding: 10px;
+    }
 }
